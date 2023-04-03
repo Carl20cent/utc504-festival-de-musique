@@ -1,0 +1,5 @@
+Artiste (_id_artiste_, nom_artiste, lien_page, lien_illustration)
+Concert (_id_concert_, date_concert, heure_debut_concert, entree_libre, #id_artiste, #id_scene)
+Livre_or (_id_post_, date_post, pseudo_post, message_post, ip_post)
+Scene (_id_scene_, nom_scene, adresse, code_postal, ville)
+Video (_id_video_, nom_video, lien_video_youtube, #id_artiste)
