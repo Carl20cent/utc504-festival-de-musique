@@ -15,6 +15,10 @@ if (
 	echo '<p class="message-erreur">ERREUR : Une des informations de connexion est manquante !</p>';
 }
 
+// Définition de la TimeZone pour les dates avant instanciation de l'objet PDO
+// (ça évite certains Warning quand cette timezone n'est pas dans le php.ini)
+date_default_timezone_set('Europe/Paris');
+
 // Connexion à la BDD en utilisant les "PHP Data Objects" (PDO)
 try {
 	// Définition et stockage de l'objet de connexion
